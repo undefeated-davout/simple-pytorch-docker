@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    container_name: simple-pytorch.app
+    tty: true
+    restart: always
+    # command: nvidia-smi
+    # runtime: nvidia
+    volumes:
+      - .:/opt/app
+    ports:
+      - 8888:8888
