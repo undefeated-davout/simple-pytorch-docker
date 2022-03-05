@@ -1,2 +1,4 @@
 notebook/*
 !.gitkeep
+
+!binary-classifier.ipynb
