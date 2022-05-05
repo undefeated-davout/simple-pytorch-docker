@@ -51,6 +51,6 @@ RUN echo "c.NotebookApp.ip = '0.0.0.0'" >>${CONFIG} && \
 WORKDIR /opt/app/
 RUN chmod -R a+w .
 
-RUN echo "alias ll='ls -lahF'" >> ~/.bashrc
+RUN echo "alias ll='ls -lahF --color=auto'" >> ~/.bashrc
 
 CMD ["jupyter","notebook", "--allow-root"]
